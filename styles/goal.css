@@ -1,0 +1,29 @@
+.goal {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.7rem;
+    text-align: center;
+}
+
+.goal__backers, .goal__days {
+    position: relative;
+    padding-left: 4.7rem;
+}
+
+.goal__backers::after, .goal__days::after {
+    content: '';
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    height: 6.3rem;
+    width: 0.1rem;
+    background-color: var(--black-grey);
+}
+
+.goal dd {
+    font-size: 1.5rem;
+    color: var(--silver);
+    margin-top: 0.8rem;
+}

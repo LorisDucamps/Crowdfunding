@@ -1,0 +1,15 @@
+nav ul {
+    display: flex;
+    gap: 3.2rem;
+}
+
+nav ul li a {
+    font-size: 1.3rem;
+    font-family: 'Commissioner-Medium';
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav ul li:hover a {
+    text-decoration: underline;
+}

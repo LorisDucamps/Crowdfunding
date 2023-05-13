@@ -1,0 +1,19 @@
+.project .logo {
+    position: absolute;
+    top:-28px;
+    left:0;
+    right:0;
+    margin:0 auto;
+}
+
+.project h3 {
+    margin-top: 0.8rem;
+}
+
+.project h3, .project p {
+    text-align: center;
+}
+
+.project p {
+    margin: 1.5rem 0 4rem 0;
+}

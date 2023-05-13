@@ -1,26 +1,169 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+  font-family: 'Commissioner-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../public/fonts/commissioner-regular.woff2") format('woff2');
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: 'Commissioner-Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../public/fonts/commissioner-medium.woff2") format('woff2');
 }
 
-* {
+@font-face {
+  font-family: 'Commissioner-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../public/fonts/commissioner-bold.woff2") format('woff2');
+}
+
+:root {
+  --background-page: hsla(0,0%,98%,1);
+  --verdigris: hsla(176,50%,47%,1);
+  --deep-verdigris: hsla(176,72%,28%,1);
+  --deep-verdigris-light: hsla(176,72%,28%,0.05);
+  --silver: hsla(0,0%,48%,1);
+  --disabled: hsla(0,0%,59%,1);
+  --deep-dark: hsla(0,0%,18%,1);
+  --deep-grey: hsla(0,0%,44%,1);
+  --silver-light: hsla(0,0%,18%,0.05);
+  --black-grey: hsla(0,0%,0%,0.15);
+  --black: hsla(0,0%,0%,1);
+  --white: hsla(0,0%,100%,1);
+  --bookmarkiconcolor : hsla(0, 0%, 69%, 1);
+}
+
+*, *::before, *::after {
   box-sizing: border-box;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+* {
+  margin: 0;
 }
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size:1.6rem;
+  line-height: 2rem;
+  font-family: 'Commissioner-Regular';
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--background-page);
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  all:unset;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+  color: var(--silver);
+}
+ul {
+  all:unset;
+  list-style-type: none;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+/* TITLE */
+
+h2, .h2, h3, .h3, h4, .h4 {
+  color: var(--black);
+  font-family: 'Commissioner-Bold';
+}
+
+h2, .h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+h3, .h3 {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+}
+
+h4, .h4 {
+  font-size: 2.4rem;
+}
+
+h5, .h5 {
+  font-size: 2rem;
+}
+
+/* CUSTOM */
+
+header, main {
+  position:relative;
+
+
+}
+
+header {
+  position:relative;
+}
+
+.background-hero {
+  height:400px;
+  background-image: url("../public/image-hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header .wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin:0 auto;
+}
+
+header .inner {
+  position: absolute;
+  top:48px;
+  left:0;
+  right:0;
+  display: flex;
+  justify-content: space-between;
+  margin:0 auto;
+  max-width: 1110px;
+}
+
+
+nav ul {
+  display: flex;
+}
+
+/* MAIN */
+
+main .wrapper {
+  display: grid;
+  gap: 2.4rem;
+  max-width: 77.8rem;
+  margin: -9.2rem auto 0 auto;
+  padding: 0 2.4rem;
+}
+
+main .card {
+  position: relative;
+  background-color: var(--white);
+  padding: 4.8rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.0497193);
+}
+
+
+
+main .actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+
