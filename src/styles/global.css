@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "Commissioner-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/font/Commissioner-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Commissioner-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./assets/font/Commissioner-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Commissioner-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./assets/font/Commissioner-Bold.woff2") format("woff2");
+}
+
+:root {
+  --background-page: hsla(0, 0%, 98%, 1);
+  --verdigris: hsla(176, 50%, 47%, 1);
+  --deep-verdigris: hsla(176, 72%, 28%, 1);
+  --deep-verdigris-light: hsla(176, 72%, 28%, 0.05);
+  --silver: hsla(0, 0%, 48%, 1);
+  --disabled: hsla(0, 0%, 59%, 1);
+  --deep-dark: hsla(0, 0%, 18%, 1);
+  --deep-grey: hsla(0, 0%, 44%, 1);
+  --silver-light: hsla(0, 0%, 18%, 0.05);
+  --black-grey: hsla(0, 0%, 0%, 0.15);
+  --black: hsla(0, 0%, 0%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --bookmarkiconcolor: hsla(0, 0%, 69%, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  font-size: 62.5%;
+  overflow-wrap: break-word;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-family: "Commissioner-Regular", sans-serif;
+  background-color: var(--background-page);
+  overflow-x: hidden;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* input,
+button,
+textarea,
+select {
+  all: unset;
+} */
+
+button {
+  all: unset;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  color: var(--silver);
+}
+
+ul {
+  all: unset;
+  list-style-type: none;
+}
+
+/* TITLE */
+
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  color: var(--black);
+  font-family: "Commissioner-Bold";
+}
+
+/* h2,
+.h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+} */
+
+/* h4,
+.h4 {
+  font-size: 2.4rem;
+}
+
+h5,
+.h5 {
+  font-size: 2rem;
+} */
+
+/* MOBILE FIRST */
+
+main {
+  padding: 0 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 730px;
+  margin: 0 auto;
+  gap: 24px;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    background-color: brown;
+  }
+
+  /* h3,
+  .h3 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  } */
+}
+
+/* CONTAINER */
+
+/* .wrapper {
+  padding: 24px;
+} */
+
+/* CARD */
+
+/* MODAL */
+.modal {
+  display: block;
+}
+
+.modal:before {
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.modal-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fefefe;
+  border: #333333 solid 0px;
+  border-radius: 5px;
+  z-index: 11;
+}
+
+.bg-test {
+  background-color: aquamarine;
+}
+.opacity {
+  opacity: 0.15;
+}

@@ -1,0 +1,49 @@
+.project .wrapper {
+  padding: 52px 24px 40px 24px;
+}
+
+.project .logo {
+  position: absolute;
+  top: -28px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.project h1 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--black);
+  font-family: "Commissioner-Bold";
+}
+
+.project h1,
+.project p {
+  text-align: center;
+}
+
+.project p {
+  margin: 1.6rem 0 2.4rem 0;
+}
+
+.project .actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .project h1 {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+  .project .wrapper {
+    padding: 48px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+}
