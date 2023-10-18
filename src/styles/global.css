@@ -1,25 +1,43 @@
-@font-face {
-  font-family: "Commissioner-Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("./assets/font/Commissioner-Regular.woff2") format("woff2");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* after:content-['*'] after:fixed after:inset-0 after:h-full after:background-linear */
+
+@layer base {
+  html {
+    @apply font-commissioner;
+  }
+
+  @font-face {
+    font-family: "Commissioner";
+    font-weight: 400;
+    src: url("/assets/font/Commissioner-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Commissioner";
+    font-weight: 500;
+    src: url("./assets/font/Commissioner-Medium.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Commissioner";
+    font-weight: 700;
+    src: url("./assets/font/Commissioner-Bold.woff2") format("woff2");
+  }
 }
 
-@font-face {
-  font-family: "Commissioner-Medium";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("./assets/font/Commissioner-Medium.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Commissioner-Bold";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("./assets/font/Commissioner-Bold.woff2") format("woff2");
+@layer utilities {
+  .border-navigation {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .divide-navigation {
+    opacity: 0.1;
+    background: #2f2f2f;
+  }
+  .background-linear {
+    opacity: 0.6;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  }
 }
 
 :root {
@@ -38,16 +56,16 @@
   --bookmarkiconcolor: hsla(0, 0%, 69%, 1);
 }
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
   min-width: 0;
   min-height: 0;
   margin: 0;
-}
+} */
 
-html {
+/* html {
   height: 100%;
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
@@ -55,9 +73,9 @@ html {
   -moz-osx-font-smoothing: auto;
   font-size: 62.5%;
   overflow-wrap: break-word;
-}
+} */
 
-body {
+/* body {
   min-height: 100vh;
   width: 100%;
   margin: 0;
@@ -66,16 +84,16 @@ body {
   font-family: "Commissioner-Regular", sans-serif;
   background-color: var(--background-page);
   overflow-x: hidden;
-}
+} */
 
-img,
+/* img,
 picture,
 video,
 canvas,
 svg {
   display: block;
   max-width: 100%;
-}
+} */
 
 /* input,
 button,
@@ -84,11 +102,11 @@ select {
   all: unset;
 } */
 
-button {
+/* button {
   all: unset;
-}
+} */
 
-p,
+/* p,
 h1,
 h2,
 h3,
@@ -105,11 +123,11 @@ p {
 ul {
   all: unset;
   list-style-type: none;
-}
+} */
 
 /* TITLE */
 
-h2,
+/* h2,
 .h2,
 h3,
 .h3,
@@ -117,7 +135,7 @@ h4,
 .h4 {
   color: var(--black);
   font-family: "Commissioner-Bold";
-}
+} */
 
 /* h2,
 .h2 {
@@ -142,7 +160,7 @@ h5,
 } */
 
 /* MOBILE FIRST */
-
+/* 
 main {
   padding: 0 24px;
 }
@@ -153,22 +171,22 @@ main {
   max-width: 730px;
   margin: 0 auto;
   gap: 24px;
-}
+} */
 
 /* DESKTOP */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   body {
     font-size: 1.6rem;
     line-height: 2rem;
     background-color: brown;
-  }
+  } */
 
-  /* h3,
+/* h3,
   .h3 {
     font-size: 2rem;
     line-height: 2.4rem;
   } */
-}
+/* } */
 
 /* CONTAINER */
 
@@ -179,7 +197,7 @@ main {
 /* CARD */
 
 /* MODAL */
-.modal {
+/* .modal {
   display: block;
 }
 
@@ -211,4 +229,4 @@ main {
 }
 .opacity {
   opacity: 0.15;
-}
+} */

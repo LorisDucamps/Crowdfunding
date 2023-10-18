@@ -9,6 +9,7 @@ export default {
       colors: {
         primary: '#3CB3AB',
         primarydark: '#147A73',
+        dark: '#2F2F2F',
         gray: {
           0: '#707070',
           1: '#7A7A7A',
@@ -24,7 +25,7 @@ export default {
         13: ['13px', { lineHeight: '16px' }],
       },
       fontFamily: {
-        commissioner: ['var(--font-commissioner)'],
+        commissioner: ['Commissioner']
       },
     },
   },
