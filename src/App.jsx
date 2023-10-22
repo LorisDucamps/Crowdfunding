@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 import './styles/global.css'
-import './styles/button.css'
-import './styles/project.css'
-import './styles/goal.css'
-import './styles/card.css'
 import data from "./data/data.json";
 import Header from './components/Header/Header'
 import ProjectIntro from './components/ProjectIntro/ProjectIntro';
@@ -37,13 +33,13 @@ export default function App() {
 
       <Header />
 
-      {/* <main>
-        <div className='container'>
+      <main className='px-6'>
+        <div className="flex flex-col max-w-[730px] mx-auto gap-6 -mt-14 sm:-mt-[92px]">
           <ProjectIntro />
-          <ProjectGoal pledge={amountBacked} left={totalBackers} />
-          <ProjectAbout collections={collections} onOpenModal={handleShowModal} />
+          {/* <ProjectGoal pledge={amountBacked} left={totalBackers} />
+          <ProjectAbout collections={collections} onOpenModal={handleShowModal} /> */}
         </div>
-      </main> */}
+      </main>
     </>
   )
 }

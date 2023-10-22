@@ -1,8 +1,8 @@
 import clsx from "clsx";
 function Card({ children, className }) {
     return (
-        <section className={clsx('card', className)}>
-            <div className='wrapper'>
+        <section className='relative bg-white border border-custom rounded-lg'>
+            <div className={clsx('px-6 py-10', className)}>
                 {children}
             </div>
         </section>
