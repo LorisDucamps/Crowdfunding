@@ -7,14 +7,14 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <header className={`${before} relative flex justify-between items-center max-w-[1440px] mx-auto sm:before:hidden`}>
+        <header className={`${before} relative flex justify-between items-center max-w-[1440px] mx-auto`}>
 
             {isOpen && <div className="fixed top-0 left-0 right-0 bottom-0 h-full background-linear z-10 sm:hidden"></div>}
 
             <picture>
-                <source media="(min-width: 376px)" srcSet="/assets/img/image-hero-desktop.jpg 1x, /assets/img/image-hero-desktop_2x.jpg 2x" type="image/jpg" />
-                <source media="(max-width: 375px)" srcSet="/assets/img/image-hero-mobile.jpg 1x, /assets/img/image-hero-mobile_2x.jpg 2x" type="image/jpg" />
-                <img src="/assets/img/image-hero-desktop.jpg" type="image/jpg" alt="Bannière bureau de travail" />
+                <source media="(min-width: 641px)" srcSet="/assets/img/image-hero-desktop.jpg 1x, /assets/img/image-hero-desktop_2x.jpg 2x" type="image/jpg" />
+                <source media="(max-width: 640px)" srcSet="/assets/img/image-hero-mobile.jpg 1x, /assets/img/image-hero-mobile_2x.jpg 2x" type="image/jpg" />
+                <img src="/assets/img/image-hero-desktop.jpg" type="image/jpg" alt="Visuel bannière bureau de travail" />
             </picture>
 
             <nav className="absolute top-4 left-0 right-0 max-w-[1110px] mx-auto w-full z-20 sm:top-12">
@@ -40,7 +40,7 @@ export default function Header() {
 
             {isOpen && (
                 <nav className="absolute top-[88px] right-0 left-0 px-6 z-20 sm:hidden">
-                    <ul className="border border-light-black rounded-lg divide-y divide-dark/10 bg-white">
+                    <ul className="border border-light-black rounded-lg divide-y divide-medium-dark-charcoal bg-white">
                         <li>
                             <a className="block text-lg p-6" href="#">About</a>
                         </li>

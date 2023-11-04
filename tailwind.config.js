@@ -18,6 +18,7 @@ export default {
         'sonic-silver': 'hsl(0, 0%, 48%)',
         'dark-charcoal': 'hsl(0, 0%, 18%)',
         'light-dark-charcoal': 'hsla(0, 0%, 18%, 0.05)',
+        'medium-dark-charcoal': 'hsla(0, 0%, 18%, 0.10)',
         'philippine-silver': 'hsl(0, 0%, 69%)',
         'dark-silver': 'hsl(0, 0%, 44%)',
       },
