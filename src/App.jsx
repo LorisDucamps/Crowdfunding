@@ -9,11 +9,9 @@ import Modal from './components/Modal/Modal';
 
 export default function App() {
 
-  const [collections, setCollections] = useState(data)
+  const [collections, setCollections] = useState(data[0])
   const [isOpen, setIsOpen] = useState(false)
 
-  const [amountBacked, setAmountBacked] = useState(0);
-  const [totalBackers, setTotalBackers] = useState(0);
 
   function handleShowModal() {
     setIsOpen(true)
@@ -36,8 +34,8 @@ export default function App() {
       <main className='px-6'>
         <div className="flex flex-col max-w-[730px] mx-auto gap-6 -mt-14 sm:-mt-[92px]">
           <ProjectIntro />
-          {/* <ProjectGoal pledge={amountBacked} left={totalBackers} />
-          <ProjectAbout collections={collections} onOpenModal={handleShowModal} /> */}
+          <ProjectGoal collections={collections} />
+          {/* <ProjectAbout collections={collections} onOpenModal={handleShowModal} /> */}
         </div>
       </main>
     </>
