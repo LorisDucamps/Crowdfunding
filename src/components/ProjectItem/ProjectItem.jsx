@@ -1,21 +1,21 @@
 import React from 'react'
 import Card from '../UI/Card/Card'
 
-export default function ProjectItem({ collection, onOpenModal }) {
+export default function ProjectItem({ pledge, onOpenModal }) {
 
     function handleOpenModalProject() {
         onOpenModal(true)
     }
 
     return (
-        <Card className={collection.left === 0 ? 'opacity' : 'show'}>
+        <Card className={pledge.left === 0 ? 'opacity' : 'show'}>
             <div>
-                <h3>{collection.title}</h3>
-                <p>{collection.pledge}</p>
+                <h3>{pledge.title}</h3>
+                <p>{pledge.pledge}</p>
             </div>
-            <p>{collection.description}</p>
+            <p>{pledge.description}</p>
             <div>
-                <p>{collection.left}</p>
+                <p>{pledge.left}</p>
                 <button onClick={handleOpenModalProject}>Select Reward</button>
             </div>
         </Card>

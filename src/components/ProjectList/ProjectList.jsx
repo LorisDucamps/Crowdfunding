@@ -1,17 +1,18 @@
-import React from 'react'
-import ProjectItem from '../ProjectItem/ProjectItem'
+import React from "react";
+import ProjectItem from "../ProjectItem/ProjectItem";
 
-export default function ProjectList({ collections, onOpenModal }) {
-    return (
-        <>
-            {
-                collections.map((collection) => {
-                    return (
-                        <ProjectItem key={collection.id} collection={collection} onOpenModal={onOpenModal} />
-                    )
-                })
-            }
-        </>
-
-    )
+export default function ProjectList({ pledges, onOpenModal }) {
+  return (
+    <>
+      {pledges.map((pledge) => {
+        return (
+          <ProjectItem
+            key={pledge.id}
+            pledge={pledge}
+            onOpenModal={onOpenModal}
+          />
+        );
+      })}
+    </>
+  );
 }
