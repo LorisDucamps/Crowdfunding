@@ -1,8 +1,13 @@
 import React from "react";
-import ProjectList from "../ProjectList/ProjectList";
+import ProjectList from '../ProjectList/ProjectList';
 import Card from "../UI/Card/Card";
 
 export default function ProjectAbout({ pledges, onOpenModal }) {
+
+  if (!pledges || pledges.length === 0) {
+    return <p>No pledges available for this project.</p>;
+  }
+
   return (
     <Card>
       <h2 className="text-lg font-bold mb-6 sm:text-xl sm:mb-9">

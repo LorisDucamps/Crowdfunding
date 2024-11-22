@@ -1,10 +1,17 @@
 import React from "react";
-import ProjectItem from "../ProjectItem/ProjectItem";
+import ProjectItem from '../ProjectItem/ProjectItem';
 
 export default function ProjectList({ pledges, onOpenModal }) {
+
+  if (!pledges || pledges.length === 0) {
+    return <p>No pledges available.</p>;
+  }
+
+  const filteredPledges = pledges.slice(1);
+
   return (
     <>
-      {pledges.map((pledge) => {
+      {filteredPledges.map((pledge) => {
         return (
           <ProjectItem
             key={pledge.id}

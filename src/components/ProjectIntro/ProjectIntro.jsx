@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Card from '../UI/Card/Card'
 import Button from '../Button/Button'
+import Card from '../UI/Card/Card'
 
 export default function ProjectIntro() {
 
